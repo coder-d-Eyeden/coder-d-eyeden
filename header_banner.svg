@@ -1,0 +1,192 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+
+        <!-- Background -->
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0f172a"></stop>
+            <stop offset="100%" stop-color="#020617"></stop>
+        </linearGradient>
+
+        <!-- Neon Gradient -->
+        <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#06b6d4"></stop>
+            <stop offset="50%" stop-color="#8b5cf6"></stop>
+            <stop offset="100%" stop-color="#3b82f6"></stop>
+        </linearGradient>
+
+        <!-- Glow -->
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+            <feMerge>
+                <feMergeNode in="blur"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+
+        <!-- Grid Pattern -->
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1"></path>
+        </pattern>
+
+        <style>
+            .title {
+                font-family: Orbitron, monospace;
+                font-size: 120px;
+                font-weight: 900;
+                letter-spacing: 10px;
+                fill: url(#neon);
+                filter: url(#glow);
+                animation: flicker 4s infinite;
+            }
+
+            .subtitle {
+                font-family: monospace;
+                font-size: 20px;
+                fill: #cbd5e1;
+                letter-spacing: 2px;
+            }
+
+            .small {
+                font-family: monospace;
+                font-size: 18px;
+                fill: #94a3b8;
+                letter-spacing: 2px;
+            }
+
+            .cursor {
+                animation: blink 1s infinite;
+            }
+
+            .scanline {
+                animation: scan 6s linear infinite;
+            }
+
+            .bar {
+                animation: bars 3s ease-in-out infinite;
+                transform-origin: bottom;
+            }
+
+            .hex {
+                animation: float 4s ease-in-out infinite;
+            }
+
+            @keyframes blink {
+
+                0%,
+                100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+            }
+
+            @keyframes flicker {
+
+                0%,
+                100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.9;
+                }
+
+                52% {
+                    opacity: 0.7;
+                }
+
+                54% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes scan {
+                from {
+                    transform: translateY(-500px);
+                }
+
+                to {
+                    transform: translateY(500px);
+                }
+            }
+
+            @keyframes bars {
+
+                0%,
+                100% {
+                    transform: scaleY(0.4);
+                }
+
+                50% {
+                    transform: scaleY(1);
+                }
+            }
+
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+        </style>
+
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#bg)"></rect>
+
+    <!-- Grid -->
+    <rect width="100%" height="100%" fill="url(#grid)" opacity="0.35"></rect>
+
+    <!-- Scanline -->
+    <rect class="scanline" x="0" y="-100" width="1600" height="80" fill="url(#neon)" opacity="0.03"></rect>
+
+    <!-- Decorative Hexagons -->
+    <polygon class="hex" points="180,120 210,140 210,180 180,200 150,180 150,140" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.4"></polygon>
+
+    <polygon class="hex" points="1420,300 1450,320 1450,360 1420,380 1390,360 1390,320" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.4"></polygon>
+
+    <!-- Side Accent Bars -->
+    <rect x="120" y="160" width="6" height="180" fill="#06b6d4" filter="url(#glow)" class="bar"></rect>
+
+    <rect x="1470" y="160" width="6" height="180" fill="#8b5cf6" filter="url(#glow)" class="bar"></rect>
+
+    <!-- Main Text -->
+    <text x="800" y="250" text-anchor="middle" class="title">
+        RUBEL ROY
+    </text>
+
+    <!-- Cursor -->
+    <rect x="1130" y="145" width="7" height="110" fill="#06b6d4" class="cursor" filter="url(#glow)"></rect>
+
+    <!-- Subtitle -->
+    <text x="800" y="315" text-anchor="middle" class="subtitle">
+        DATA SCIENCE • MACHINE LEARNING • AI SYSTEMS
+    </text>
+
+    <!-- Small Text -->
+    <text x="800" y="355" text-anchor="middle" class="small">
+        Building Intelligent Systems with Code &amp; Curiosity
+    </text>
+
+    <!-- Bottom Decorative Line -->
+    <line x1="300" y1="420" x2="1300" y2="420" stroke="url(#neon)" stroke-width="2" opacity="0.7"></line>
+
+    <!-- Moving Data Pulse -->
+    <circle r="5" fill="#06b6d4" filter="url(#glow)">
+        <animateMotion dur="4s" repeatCount="indefinite" path="M300 420 L1300 420"></animateMotion>
+    </circle>
+
+    <!-- Center Icon -->
+    <text x="800" y="435" text-anchor="middle" font-family="monospace" font-size="26" fill="url(#neon)" filter="url(#glow)">
+        [ SYSTEM ONLINE ]
+    </text>
+</svg>
