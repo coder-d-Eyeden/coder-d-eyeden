@@ -9,6 +9,30 @@
    <img src="https://komarev.com/ghpvc/?username=coder-d-eyeden&label=Profile+views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
 </p>
  
+## About Me
+# Hola!! 👋
+
+Hi, I'm **Rubel Roy**  
+🎓 Currently pursuing a Master's in Data Science  
+📚 Learning **LangChain** and exploring AI applications  
+🔍 Actively searching for internship opportunities  
+♟️ I love playing chess — still a noob, but improving every game  
+
+---
+
+### 🚀 Interests
+- Data Science & Machine Learning
+- Retrieval Systems & NLP
+- Generative AI & LangChain
+- Chess & Problem Solving
+
+### 🛠️ Currently Learning
+- LangChain
+- Elasticsearch
+- Docker
+- Python for AI Applications
+
+
  
 ## 🛠️ Tech Stack
      
