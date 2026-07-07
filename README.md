@@ -5,7 +5,7 @@
 
 <p align='center'>
     <a href="https://coder-d-eyeden.github.io/Portfolio/"><img src="https://img.shields.io/badge/Website-rubel--roy.github.io-1f6feb?style=for-the-badge&logo=github-pages&logoColor=white"/></a>
-    <a href="https://github.com/coder-d-Eyeden/coder-d-eyeden/blob/main/My_Resume%20.pdf"><img src="https://img.shields.io/badge/CV%20(PDF)-Download-d2a8ff?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
+    <a href="https://github.com/coder-d-Eyeden/coder-d-eyeden/blob/main/My_Resume.pdf"><img src="https://img.shields.io/badge/CV%20(PDF)-Download-d2a8ff?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
    <img src="https://komarev.com/ghpvc/?username=coder-d-eyeden&label=Profile+views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
 </p>
  
